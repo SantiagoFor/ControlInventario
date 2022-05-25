@@ -2,7 +2,7 @@
 
 class MovimientoController extends Database{
     public function obtenerMovimientos(){
-        $query = "Select * from movimiento";
+        $query = "Select id_movimiento,movimiento.cantidad,tipo_movimiento,descripcion_movimiento,producto.nombre from movimiento inner join producto where producto.id_producto=movimiento.id_producto;";
         return $this->sql_seleccionar($query);
     }
     public function crearMovimiento($movimiento){

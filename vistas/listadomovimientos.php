@@ -16,7 +16,7 @@ include('plantilla/header.html');
                         <td>Cantidad</td>
                         <td>Tipo movimiento</td>
                         <td>Descripcion movimiento</td>
-                        <td>id_producto</td>
+                        <td>Producto</td>
                         <td>Actualización</td>
                     </tr>
                 </thead>
@@ -33,7 +33,7 @@ include('plantilla/header.html');
                         <td>$fila->cantidad</td>
                         <td>$fila->tipo_movimiento</td>
                         <td>$fila->descripcion_movimiento</td>
-                        <td>$fila->id_producto</td>
+                        <td>$fila->nombre</td>
                         <td><a href='index.php?view=actualizarMovimiento&target=$fila->id_movimiento'><button class='btn btn-info'>Actualizar</button></a></td>
                     </tr>
                     ";

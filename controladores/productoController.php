@@ -2,7 +2,7 @@
 
 class ProductoController extends Database{
     public function obtenerProductos(){
-        $query = "Select * from producto";
+        $query = "Select id_producto,producto.nombre,descripcion,cantidad,proveedor.nombre from producto inner join proveedor where producto.id_proveedor=proveedor.id_proveedor;";
         return $this->sql_seleccionar($query);
     }
     public function crearProducto($producto){

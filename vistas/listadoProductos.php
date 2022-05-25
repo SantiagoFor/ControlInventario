@@ -16,7 +16,7 @@ include('plantilla/header.html');
                         <td>Nombre</td>
                         <td>Descripcion</td>
                         <td>Cantidad</td>
-                        <td>id_proveedor</td>
+                        <td>Proveedor</td>
                         <td>Actualización</td>
                     </tr>
                 </thead>
@@ -33,7 +33,7 @@ include('plantilla/header.html');
                         <td>$fila->nombre</td>
                         <td>$fila->descripcion</td>
                         <td>$fila->cantidad</td>
-                        <td>$fila->id_proveedor</td>
+                        <td>$fila->nombre</td>
                         <td><a href='index.php?view=actualizarProducto&target=$fila->id_producto'><button class='btn btn-info'>Actualizar</button></a></td>
                     </tr>
                     ";
